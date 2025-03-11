@@ -11,7 +11,6 @@ public class Table{
         System.out.println("Table of "+ int_value);
         for(int i=1; i<=100; i++){
             System.out.println(int_value+"*"+i+"="+int_value*i);
-
         }
         sc.close();
     }
