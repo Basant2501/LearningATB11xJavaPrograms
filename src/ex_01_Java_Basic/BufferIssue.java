@@ -9,7 +9,7 @@ public class BufferIssue {
         System.out.print("Enter your age: ");
         int age = scanner.nextInt(); // Reads integer but leaves "\n" in buffer
 
-        //scanner.nextLine(); // ✅ Clear the buffer
+        scanner.nextLine(); // ✅ Clear the buffer
 
         System.out.print("Enter your name: ");
         String name = scanner.nextLine(); // ✅ Now reads the full name properly
