@@ -9,6 +9,9 @@ public class PalindromeCheck {
         //Take a String input
         String stringInput=sc.nextLine();
 
+        //Normalize the string: remove non-alphanumeric characters and convert to lowercase
+        stringInput=stringInput.replaceAll("[^a-zA-Z0-9]","").toLowerCase();
+
         //Declare a reverse array variable
         char[] reverseArray=new char[stringInput.length()];
 
@@ -30,7 +33,7 @@ public class PalindromeCheck {
         //The String class has a constructor that takes a char[] and creates a String from it.
 
         String reversedString= new String(reverseArray);
-        if (stringInput.equalsIgnoreCase(reversedString)) {
+        if (stringInput.equals(reversedString)) {
             System.out.println("Input string is Palindrome");}
         else{
             System.out.println("Input string is not Palindrome");
