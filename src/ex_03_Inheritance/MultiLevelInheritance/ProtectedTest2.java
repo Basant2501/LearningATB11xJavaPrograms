@@ -28,8 +28,5 @@ public class ProtectedTest2 extends ProtectedTest {
         //    You are in a subclass,
         //    You access it through a reference of the subclass type
 
-
-
-
     }
 }
